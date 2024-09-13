@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Karla';
+    src: url('Karla-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Babycakes';
+    src: url('BABYCAKE.ttf') format('truetype');
+}
+
+body {
+    background-color: blanchedalmond;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 5px; /* Padding around the body */
+}
+
+/* Header styling */
+body > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: coral;
+    padding: 5px; /* Padding inside the header */
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Babycakes', sans-serif;
+    font-size: x-large;
+    color: rgb(31, 64, 31);
+}
+
+/* Nav styles for vertical layout on the right */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: coral;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li:last-child {
+    margin-bottom: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    text-align: right;
+    padding: 5px;
+}
+
+/* Hover effect for nav links */
+nav ul li a:hover {
+    color: rgb(31, 64, 31);
+    text-decoration: underline;
+}
+
+/* Main content styles */
+.main-content {
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.main-content img {
+    max-width: 50%;
+    height: auto;
+}
+
+/* Footer styling */
+body > footer {
+    text-align: center;
+    padding: 5px;
+    background-color: coral;
+    color: white;
+}
+
+/* Table styling */
+.table-container {
+    padding: 5px; /* Padding around the table container */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: coral;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Ensure the table can scroll horizontally on smaller screens */
+.table-container {
+    overflow-x: auto;
+}

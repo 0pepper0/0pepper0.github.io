@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoshiFacts</title>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            document.getElementById('output').textContent = 'Confirmation email sent!';
+            document.getElementById('messageForm').reset();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>MoshiFacts</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="characters.html">Moshi Characters</a></li>
+                <li><a href="moshlings.html">Moshlings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-content">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Moshi_Monsters_logo.svg/1200px-Moshi_Monsters_logo.svg.png" alt="Moshi Monsters Logo">
+        </div>
+        <article>
+            <header>
+                <h2>What is Moshi Monsters?</h2>
+                <h3>An introduction into the game</h3>
+            </header>
+            <main>
+                <p>Moshi Monsters was a British online MMORPG (massively multiplayer role-play game) developed by Mind Candy. The game was aimed at children aged 6-12 and at its peak had over 80 million registered users worldwide.</p>
+                <p>In the game you created your own Monster from a choice of 6 available species and a variety of color ways.</p>
+                <p>The game shut down on 19th December 2019 due to the website using Adobe Flash Player, as support for the software was ended in December 2020. An unofficial remake called <a href="https://moshirewritten.com">Moshi Monsters Rewritten</a> is available to play, with the majority of original game functions and storylines.</p>
+                <h3>The Story Line</h3>
+                <p>With your Monster, you complete the Moshi Monster Adventures spanning five different locations. The story follows the Super Moshi's, a secret spy organization, attempting to rescue Moshlings (Moshi Monster Pets) from the evil Dr. Strangeglove as he kidnaps Moshlings for his evil plans. He uses these Moshlings to create Glumps which are evil Moshlings and work for CLONC. CLONC is the organization run by Dr. Strangeglove. The main end goal of CLONC is to take control of Monstro City and then the world.</p>
+            </main>
+            <footer>
+                <h4>References</h4>
+                <p><a href="https://en.wikipedia.org/wiki/Moshi_Monsters">Wikipedia</a><br><a href="https://moshimonsters.fandom.com/wiki">Moshi Monsters Fandom</a></p>
+            </footer>
+        </article>
+    </main>
+    <footer>
+        <h2>Sign up for our Moshi Monster newsletter</h2>
+        <form id="messageForm" onsubmit="handleSubmit(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="TC">Do you agree to the <a href="TCs.html">Terms and Conditions</a>?</label>
+            <input type="radio" name="TCs" id="I_agree" value="I agree" required>
+            <label for="I_agree">I agree</label>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <p id="output"></p>
+    </footer>
+</body>
+</html>
